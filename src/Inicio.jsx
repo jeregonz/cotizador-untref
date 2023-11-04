@@ -9,7 +9,7 @@ function Inicio () {
             <h1>Seguros del hogar</h1>
             <Formulario/>
             <Link to={"historial"}>
-                <button class="btn btn-primary">
+                <button class="btn btn-dark">
                     Ver el historial
                 </button>
             </Link>

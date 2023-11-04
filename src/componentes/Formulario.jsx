@@ -48,7 +48,7 @@ function Formulario() {
 
     return (
         <>
-            <div className="container border rounded border-primary">
+            <div id="inicio" className="container border rounded border-danger">
                 <h2>Completa los datos solicitados</h2>
                 <form className="d-flex flex-column align-items-center" onSubmit={cotizar}>
 
@@ -57,7 +57,7 @@ function Formulario() {
                     <UbicacionSelect/>
                     
                     <InputMetros/>
-                    <button className="btn btn-primary">Cotizar</button>
+                    <button className="btn  btn-outline-dark">Cotizar</button>
                 </form>
                 
                 <p>Precio estimado: $ 
