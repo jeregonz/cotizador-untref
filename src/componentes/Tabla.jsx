@@ -16,9 +16,9 @@ function Tabla() {
 
     return (
         <>
-            <div className="container border rounded border-danger">
-                <table className="table table-hover">
-                    <thead >
+            <div className="container border border-2 rounded border-primary">
+                <table className="table table-hover mt-2">
+                    <thead className="border-bottom border-primary">
                         <tr>
                             <th>Fecha de cotización</th>
                             <th>Propiedad</th>

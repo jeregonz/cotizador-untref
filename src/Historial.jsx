@@ -9,7 +9,7 @@ function Historial() {
             <h1>Historial</h1>
             <Tabla />
             <Link to={"/"}>
-                <button class="btn btn-dark">
+                <button className="btn btn-dark">
                     Volver al inicio
                 </button>
             </Link>

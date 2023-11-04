@@ -15,7 +15,7 @@ function PropiedadesSelect() {
     return (
         <>
             <label htmlFor="propiedad">Selecciona el tipo de propiedad</label>
-            <select className="input-group-text" id="propiedad" onChange={handleChange} required>
+            <select className="input-group-text border border-dark" id="propiedad" onChange={handleChange} required>
                 <option value="" disabled="">...</option>
                 {propiedades.map((propiedad) => (
                     <option key={propiedad.id} value={propiedad.id}>

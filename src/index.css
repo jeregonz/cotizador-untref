@@ -2,21 +2,22 @@ body {
   margin: 0;
   place-items: center;
   min-height: 100vh;
+  font-weight: bold;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  background: linear-gradient(90deg, rgba(222,79,118,1) 0%, rgba(249,162,194,1) 22%, rgba(249,162,194,1) 78%, rgba(222,79,118,1) 100%);
-  background: linear-gradient(90deg, rgba(222,79,118,1) 0%, rgba(244,182,184,1) 22%, rgba(244,182,184,1) 78%, rgba(222,79,118,1) 100%);
-  background: linear-gradient(90deg, rgb(243 135 101) 0%, rgb(231 158 158) 22%, rgb(231 158 158) 78%, rgb(243 135 101) 100%);
+  background: linear-gradient(90deg, rgb(153 194 231) 0%, rgb(158 231 228) 22%, rgb(158 231 222) 78%, rgb(127 175 237) 100%);
 }
 
 .container#inicio {
-  background-color: rgb(249 223 201 / 72%);
+  background-color: rgb(223 253 255);
 }
 
 .container {
   background-color: rgb(255, 255, 255);
 }
 
-button {
+
+button.btn {
+  font-weight: bold;
   margin-block: 1.5%;
 }
 

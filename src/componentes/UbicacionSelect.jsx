@@ -15,7 +15,7 @@ function UbicacionSelect() {
     return (
         <>
             <label htmlFor="ubicacion">Selecciona su ubicación</label>
-            <select className="input-group-text" id="ubicacion" onChange={handleChange} required>
+            <select className="input-group-text border border-dark" id="ubicacion" onChange={handleChange} required>
                 <option value="" disabled="">...</option>
                 {ubicaciones.map((ubicacion) => (
                     <option key={ubicacion.id} value={ubicacion.id}>

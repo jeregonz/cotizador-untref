@@ -48,7 +48,7 @@ function Formulario() {
 
     return (
         <>
-            <div id="inicio" className="container border rounded border-danger">
+            <div id="inicio" className="container border border-2 rounded border-primary">
                 <h2>Completa los datos solicitados</h2>
                 <form className="d-flex flex-column align-items-center" onSubmit={cotizar}>
 
