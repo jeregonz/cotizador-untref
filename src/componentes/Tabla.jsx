@@ -16,7 +16,7 @@ function Tabla() {
 
     return (
         <>
-            <div className="container border border-2 rounded border-primary">
+            <div className="container border border-2 rounded border-primary overflow-auto">
                 <table className="table table-hover mt-2">
                     <thead className="border-bottom border-primary">
                         <tr>
