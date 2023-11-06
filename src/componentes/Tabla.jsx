@@ -2,7 +2,7 @@
 function Tabla() {
     let historial = []
 
-    const getDatos = () => {
+    const getHistorial = () => {
         const historialCotizaciones = JSON.parse(localStorage.getItem("historialCotizaciones")) || []
 
         historial = historialCotizaciones
@@ -12,7 +12,7 @@ function Tabla() {
         }
     }
 
-    getDatos()
+    getHistorial()
 
     return (
         <>
@@ -29,12 +29,12 @@ function Tabla() {
                     </thead>
                     <tbody>
                         {historial.map((elemento) => (
-                            <tr>
-                                <td key={elemento.id}>{elemento.fecha}</td>
-                                <td key={elemento.id}>{elemento.propiedad}</td>
-                                <td key={elemento.id}>{elemento.ubicacion}</td>
-                                <td key={elemento.id}>{elemento.metros}</td>
-                                <td key={elemento.id}>{elemento.poliza}</td>
+                            <tr key={elemento.id}>
+                                <td>{elemento.fecha}</td>
+                                <td>{elemento.propiedad}</td>
+                                <td>{elemento.ubicacion}</td>
+                                <td>{elemento.metros}</td>
+                                <td>{elemento.poliza}</td>
                             </tr>
                         ))}
                     </tbody>
