@@ -23,6 +23,10 @@ function Formulario() {
         imprimirPoliza(resul)
 
         guardarEnHistorial(hora, resul, prop, ubi, metros)
+
+        setTimeout(() => {
+            event.target.reset();
+          }, 2000);
     }
 
     const guardarEnHistorial = (hora, resul, prop, ubi, metros)=> {
