@@ -1,7 +1,7 @@
 import InputMetros from "./InputMetros"
 import PropiedadesSelect from "./PropiedadesSelect"
 import UbicacionSelect from "./UbicacionSelect"
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AppContext } from "../AppContext.jsx";
 
 function Formulario() {
@@ -20,7 +20,7 @@ function Formulario() {
         
         let hora = new Date().toLocaleString()
         
-        imprimirPoliza(resul)
+        setPrecioTotal(resul.toFixed(2))
 
         guardarEnHistorial(hora, resul, prop, ubi, metros)
 
@@ -45,10 +45,7 @@ function Formulario() {
               localStorage.setItem("historialCotizaciones", JSON.stringify(historialCotizaciones))
     }
 
-    const imprimirPoliza = (resul) => {
-        let valorPoliza = document.getElementById('valorPoliza');
-        valorPoliza.innerText = resul.toFixed(2);
-    }
+    const [precioTotal, setPrecioTotal] = useState(0);
 
     return (
         <>
@@ -65,7 +62,7 @@ function Formulario() {
                 </form>
                 
                 <p>Precio estimado: $ 
-                    <span id="valorPoliza">0.00</span>
+                    <span id="valorPoliza">{precioTotal}</span>
                 </p>
             </div>
         </>
